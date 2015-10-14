@@ -2,7 +2,7 @@
   "name": "vdom-form-field",
   "description": "Easy form fields",
   "main": "FormField.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "virtual-dom",
     "ui",
