@@ -3,6 +3,15 @@
   "description": "Easy form fields",
   "main": "FormField.js",
   "version": "0.0.0",
+  "keywords": [
+    "virtual-dom",
+    "ui",
+    "component",
+    "mercury",
+    "form",
+    "input",
+    "field"
+  ],
   "browserify": {
     "transform": []
   },
@@ -26,7 +35,7 @@
     "main-loop": "^3.2.0"
   },
   "dependencies": {
-    "@nichoth/state": "0.0.1",
+    "@nichoth/state": "0.0.3",
     "vdom-input": "0.0.7",
     "virtual-dom": "^2.1.1",
     "xtend": "^4.0.0"
