@@ -12,13 +12,19 @@ function FormField(opts) {
     field: value(opts.field || ''),
     input: Input({
       attrs: {
-        name: opts.field
+        name: opts.field,
+        value: opts.value
       }
     }),
     attrs: struct( extend({}, opts.attrs) )
   });
   return s;
 }
+
+FormField.hasValue = function(state) {
+  var hv = Input.hasValue( state.input );
+  return hv;
+};
 
 FormField.render = function(state) {
   return h('div.form-field', state.attrs || {}, [
