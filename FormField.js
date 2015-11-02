@@ -11,9 +11,9 @@ function FormField(opts) {
   var s = state({
     field: value(opts.field || ''),
     input: Input({
+      value: opts.value,
       attrs: {
-        name: opts.field,
-        value: opts.value
+        name: opts.field
       }
     }),
     attrs: struct( extend({}, opts.attrs) )
@@ -27,8 +27,9 @@ FormField.hasValue = function(state) {
 };
 
 FormField.render = function(state) {
-  return h('div.vdom-form-field', state.attrs || {}, [
-    h('label', [state.field + ': ']),
+  return h('div.vdom-form-field', [
+    h('label', [state.field]),
+    // h('span.field-separator', [' : ']),
     Input.render(state.input)
   ]);
 };
