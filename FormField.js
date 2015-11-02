@@ -27,7 +27,7 @@ FormField.hasValue = function(state) {
 };
 
 FormField.render = function(state) {
-  return h('div.form-field', state.attrs || {}, [
+  return h('div.vdom-form-field', state.attrs || {}, [
     h('label', [state.field + ': ']),
     Input.render(state.input)
   ]);
