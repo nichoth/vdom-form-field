@@ -13,7 +13,7 @@ function FormField(opts) {
     input: Input({
       value: opts.value,
       attrs: {
-        name: opts.field
+        name: opts.field.toLowerCase()
       }
     }),
     attrs: struct( extend({}, opts.attrs) )
