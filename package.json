@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@nichoth/state": "0.0.2",
-    "vdom-input": "0.0.7",
+    "vdom-input": "0.0.8",
     "virtual-dom": "^2.1.1",
     "xtend": "^4.0.0"
   }
